@@ -42,5 +42,10 @@ namespace PR16.Pages
                 file.Text = openFileDialog.FileName;
             }
         }
+
+        private void Next(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new Uri("Pages/Speciality.xaml", UriKind.Relative));
+        }
     }
 }
