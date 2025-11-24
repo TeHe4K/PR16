@@ -12,22 +12,33 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Microsoft.Win32;
 
 namespace PR16.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для Speciality.xaml
+    /// Логика взаимодействия для Passport.xaml
     /// </summary>
-    public partial class Speciality : Page
+    public partial class Passport : Page
     {
-        public Speciality()
+        public Passport()
         {
             InitializeComponent();
         }
 
         private void Next(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new Uri("Pages/Passport.xaml", UriKind.Relative));
+
+        }
+
+        private void File(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            if (openFileDialog.ShowDialog() == true)
+            {
+                openFileDialog.Filter = "PDF file (*.)|*.";
+                file.Text = openFileDialog.FileName;
+            }
         }
     }
 }

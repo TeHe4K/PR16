@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace PR16.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для Speciality.xaml
+    /// Логика взаимодействия для Contacts.xaml
     /// </summary>
-    public partial class Speciality : Page
+    public partial class Contacts : Page
     {
-        public Speciality()
+        public Contacts()
         {
             InitializeComponent();
-        }
-
-        private void Next(object sender, RoutedEventArgs e)
-        {
-            this.NavigationService.Navigate(new Uri("Pages/Passport.xaml", UriKind.Relative));
         }
     }
 }
