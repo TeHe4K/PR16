@@ -9,17 +9,17 @@
 
     <Grid Background="#F8F9FA">
         <Grid Margin="0,0,0,349.6" Background="White">
-            <Image HorizontalAlignment="Left" Height="40" Margin="10,10,0,0" VerticalAlignment="Top" Width="40"/>
+            <Image HorizontalAlignment="Left" Height="40" Margin="10,10,0,0" VerticalAlignment="Top" Width="40" Source="C:\Users\student-a502.PERMAVIAT\Desktop\PR16\ICO\Логотип_Пермский_авиационный_техникум.png"/>
             <Label Content="Электронная приемная компания" HorizontalAlignment="Left" Margin="55,1,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="19"/>
             <Label Content="Пермского авиационного техникума им. А. Д. Швецова" HorizontalAlignment="Left" Margin="55,24,0,0" VerticalAlignment="Top"/>
         </Grid>
         <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Margin="0,60,0,0">
             <Grid Margin="0,0,0,-0.4" Height="746" RenderTransformOrigin="0.505,0.34">
                 <Label Content="Сведение о родителях (законных представителях)" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-                <TextBox Height="24" Margin="10,95,542,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+                <TextBox Height="24" Margin="0,95,542,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" HorizontalAlignment="Right" Width="223"/>
                 <Button Content="Продолжить" HorizontalAlignment="Right" Margin="0,0,10,5" VerticalAlignment="Bottom" Width="150" Height="25" Click="Next"/>
-                <TextBox Height="24" Margin="276,95,276,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-                <TextBox Height="24" Margin="542,95,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+                <TextBox Height="24" Margin="0,95,276,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" HorizontalAlignment="Right" Width="223"/>
+                <TextBox Height="24" Margin="542,95,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" HorizontalAlignment="Left" Width="223"/>
                 <Label Content="Фамилия:" HorizontalAlignment="Left" Margin="10,71,0,0" VerticalAlignment="Top"/>
                 <Label Content="Имя:" HorizontalAlignment="Left" Margin="276,71,0,0" VerticalAlignment="Top"/>
                 <Label Content="Отчество:" HorizontalAlignment="Left" Margin="542,69,0,0" VerticalAlignment="Top"/>

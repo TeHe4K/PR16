@@ -24,5 +24,10 @@ namespace PR16.Pages
         {
             InitializeComponent();
         }
+
+        private void Next(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

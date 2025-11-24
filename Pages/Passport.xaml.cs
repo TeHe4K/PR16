@@ -28,7 +28,7 @@ namespace PR16.Pages
 
         private void Next(object sender, RoutedEventArgs e)
         {
-
+            this.NavigationService.Navigate(new Uri("Pages/Contacts.xaml", UriKind.Relative));
         }
 
         private void File(object sender, RoutedEventArgs e)
