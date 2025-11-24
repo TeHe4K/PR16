@@ -4,60 +4,65 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:PR16.Pages"
-      mc:Ignorable="d" d:DesignWidth="792" d:Height="410"
+      mc:Ignorable="d" d:DesignWidth="792" 
       Title="Parents">
 
     <Grid Background="#F8F9FA">
-        <Grid Margin="0,0,0,349.6" Background="White">
+        <Grid Background="White" Height="60" VerticalAlignment="Top">
             <Image HorizontalAlignment="Left" Height="40" Margin="10,10,0,0" VerticalAlignment="Top" Width="40" Source="C:\Users\student-a502.PERMAVIAT\Desktop\PR16\ICO\Логотип_Пермский_авиационный_техникум.png"/>
             <Label Content="Электронная приемная компания" HorizontalAlignment="Left" Margin="55,1,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="19"/>
             <Label Content="Пермского авиационного техникума им. А. Д. Швецова" HorizontalAlignment="Left" Margin="55,24,0,0" VerticalAlignment="Top"/>
         </Grid>
-        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Margin="0,60,0,0">
-            <Grid Margin="0,0,0,-0.4" Height="746" RenderTransformOrigin="0.505,0.34">
-                <Label Content="Сведение о родителях (законных представителях)" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-                <TextBox Height="24" Margin="0,95,542,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" HorizontalAlignment="Right" Width="223"/>
-                <Button Content="Продолжить" HorizontalAlignment="Right" Margin="0,0,10,5" VerticalAlignment="Bottom" Width="150" Height="25" Click="Next"/>
-                <TextBox Height="24" Margin="0,95,276,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" HorizontalAlignment="Right" Width="223"/>
-                <TextBox Height="24" Margin="542,95,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" HorizontalAlignment="Left" Width="223"/>
-                <Label Content="Фамилия:" HorizontalAlignment="Left" Margin="10,71,0,0" VerticalAlignment="Top"/>
-                <Label Content="Имя:" HorizontalAlignment="Left" Margin="276,71,0,0" VerticalAlignment="Top"/>
-                <Label Content="Отчество:" HorizontalAlignment="Left" Margin="542,69,0,0" VerticalAlignment="Top"/>
-                <TextBox Height="24" Margin="10,145,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-                <Label Content="Дата рождения:" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top"/>
-                <TextBox Height="24" Margin="10,195,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-                <Label Content="Место работы:" HorizontalAlignment="Left" Margin="10,171,0,0" VerticalAlignment="Top"/>
-                <TextBox Height="24" Margin="10,245,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-                <Label Content="Место жительства" HorizontalAlignment="Left" Margin="10,221,0,0" VerticalAlignment="Top"/>
-                <TextBox Height="24" Margin="10,316,407,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-                <TextBox Height="25" Margin="407,316,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-                <Label Content="Домашний телефон" HorizontalAlignment="Left" Margin="10,271,0,0" VerticalAlignment="Top"/>
-                <Label Content="Мобильный телефон" HorizontalAlignment="Left" Margin="407,269,0,0" VerticalAlignment="Top"/>
-                <CheckBox Content="Что то там подтверждаю" HorizontalAlignment="Left" Margin="10,350,0,0" VerticalAlignment="Top" Height="16" Width="167"/>
-                <Label Content="Если родитель один, заполнить данные на одного родителя" HorizontalAlignment="Left" Margin="20,25,0,0" VerticalAlignment="Top" Background="{x:Null}" FontSize="10" Foreground="Red"/>
-                <Label Content="(при наличии)" HorizontalAlignment="Left" Margin="20,293,0,0" VerticalAlignment="Top" Background="{x:Null}" FontSize="10" Foreground="Red"/>
-                <Label Content="(при наличии)" HorizontalAlignment="Left" Margin="419,293,0,0" VerticalAlignment="Top" Background="{x:Null}" FontSize="10" Foreground="Red"/>
-                <Label Content="Мать (или законный представитель)" HorizontalAlignment="Left" Margin="10,51,0,0" VerticalAlignment="Top"/>
-                <TextBox Height="24" Margin="10,436,542,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-                <TextBox Height="24" Margin="276,436,276,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-                <TextBox Height="24" Margin="542,436,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-                <Label Content="Фамилия:" HorizontalAlignment="Left" Margin="10,411,0,0" VerticalAlignment="Top"/>
-                <Label Content="Имя:" HorizontalAlignment="Left" Margin="276,411,0,0" VerticalAlignment="Top"/>
-                <Label Content="Отчество:" HorizontalAlignment="Left" Margin="542,409,0,0" VerticalAlignment="Top"/>
-                <TextBox Height="24" Margin="10,486,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-                <Label Content="Дата рождения:" HorizontalAlignment="Left" Margin="10,461,0,0" VerticalAlignment="Top"/>
-                <TextBox Height="24" Margin="10,536,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-                <Label Content="Место работы:" HorizontalAlignment="Left" Margin="10,511,0,0" VerticalAlignment="Top"/>
-                <TextBox Height="24" Margin="10,586,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-                <Label Content="Место жительства" HorizontalAlignment="Left" Margin="10,561,0,0" VerticalAlignment="Top"/>
-                <TextBox Height="24" Margin="10,656,407,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-                <TextBox Height="25" Margin="407,656,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-                <Label Content="Домашний телефон" HorizontalAlignment="Left" Margin="10,611,0,0" VerticalAlignment="Top"/>
-                <Label Content="Мобильный телефон" HorizontalAlignment="Left" Margin="407,609,0,0" VerticalAlignment="Top"/>
-                <CheckBox Content="Что то там подтверждаю" HorizontalAlignment="Left" Margin="10,690,0,0" VerticalAlignment="Top" Height="16" Width="167"/>
-                <Label Content="(при наличии)" HorizontalAlignment="Left" Margin="20,633,0,0" VerticalAlignment="Top" Background="{x:Null}" FontSize="10" Foreground="Red"/>
-                <Label Content="(при наличии)" HorizontalAlignment="Left" Margin="419,633,0,0" VerticalAlignment="Top" Background="{x:Null}" FontSize="10" Foreground="Red"/>
-                <Label Content="Отец (или законный представитель)" HorizontalAlignment="Left" Margin="10,391,0,0" VerticalAlignment="Top"/>
+        <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" Margin="0,60,0,0" VerticalAlignment="Top">
+            <Grid Margin="0,0,0,-0.4" Height="746" Width="787" HorizontalAlignment="Left">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Label Content="Сведение о родителях (законных представителях)" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="26" Width="354" Grid.Row="0" Grid.ColumnSpan="2"/>
+                <TextBox Height="24" Margin="10,95,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.Column="0" HorizontalAlignment="Left" Width="244"/>
+                <Button Content="Продолжить" HorizontalAlignment="Right" Margin="0,0,25,5" VerticalAlignment="Bottom" Width="150" Height="25" Click="Next" Grid.Column="2"/>
+                <TextBox Height="24" Margin="10,95,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.Column="1" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="245"/>
+                <TextBox Height="24" Margin="14,95,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="2" Width="224"/>
+                <Label Content="Фамилия:" HorizontalAlignment="Center" Margin="0,71,0,0" VerticalAlignment="Top" Height="26" Width="244"/>
+                <Label Content="Имя:" Margin="12,71,0,0" VerticalAlignment="Top" Height="26" Grid.Column="1" HorizontalAlignment="Left" Width="242"/>
+                <Label Content="Отчество:" Margin="14,69,0,0" VerticalAlignment="Top" Height="26" Grid.Column="2" HorizontalAlignment="Left" Width="240"/>
+                <TextBox Height="24" Margin="10,145,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.ColumnSpan="3" HorizontalAlignment="Left" Width="753"/>
+                <Label Content="Дата рождения:" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top" Height="26" Width="97" Grid.Column="0"/>
+                <TextBox Height="24" Margin="10,195,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.ColumnSpan="3" HorizontalAlignment="Left" Width="753"/>
+                <Label Content="Место работы:" HorizontalAlignment="Left" Margin="10,171,0,0" VerticalAlignment="Top" Height="26" Width="91" Grid.Column="0"/>
+                <TextBox Height="24" Margin="10,245,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.ColumnSpan="3" HorizontalAlignment="Left" Width="753"/>
+                <Label Content="Место жительства" HorizontalAlignment="Left" Margin="10,221,0,0" VerticalAlignment="Top" Height="26" Width="110" Grid.Column="0"/>
+                <TextBox Height="24" Margin="10,316,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="354" />
+                <TextBox Height="25" Margin="164,316,24,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.Column="1" Grid.ColumnSpan="2"/>
+                <Label Content="Домашний телефон" HorizontalAlignment="Left" Margin="10,271,0,0" VerticalAlignment="Top" Height="26" Width="120" Grid.Column="0"/>
+                <Label Content="Мобильный телефон" HorizontalAlignment="Left" Margin="164,269,0,0" VerticalAlignment="Top" Height="26" Width="356" Grid.Column="1" Grid.ColumnSpan="2"/>
+                <CheckBox Content="Что то там подтверждаю" HorizontalAlignment="Center" Margin="0,350,0,0" VerticalAlignment="Top" Height="16" Width="244"/>
+                <Label Content="Если родитель один, заполнить данные на одного родителя" HorizontalAlignment="Left" Margin="20,25,0,0" VerticalAlignment="Top" Background="{x:Null}" FontSize="10" Grid.Column="0" Foreground="Red" Height="23" Width="328" Grid.ColumnSpan="2"/>
+                <Label Content="(при наличии)" HorizontalAlignment="Left" Margin="20,293,0,0" VerticalAlignment="Top" Background="{x:Null}" FontSize="10" Grid.Column="0" Foreground="Red" Height="23" Width="75"/>
+                <Label Content="(при наличии)" Margin="179,293,0,0" VerticalAlignment="Top" Background="{x:Null}" Grid.Column="1" FontSize="10" Foreground="Red" Height="23" HorizontalAlignment="Left" Width="85"/>
+                <Label Content="Мать (или законный представитель)" HorizontalAlignment="Center" Margin="0,51,0,0" VerticalAlignment="Top" Height="26" Width="244"/>
+                <TextBox Height="24" Margin="10,436,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.Column="0" HorizontalAlignment="Left" Width="244"/>
+                <TextBox Height="24" Margin="0,436,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.Column="1" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" Width="244"/>
+                <TextBox Height="24" Margin="10,436,24,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.Column="2"/>
+                <Label Content="Фамилия:" HorizontalAlignment="Left" Margin="10,411,0,0" VerticalAlignment="Top" Height="26" Width="62" Grid.Column="0"/>
+                <Label Content="Имя:" HorizontalAlignment="Left" Margin="12,411,0,0" VerticalAlignment="Top" Height="26" Width="243" Grid.Column="1"/>
+                <Label Content="Отчество:" HorizontalAlignment="Center" Margin="0,409,0,0" VerticalAlignment="Top" Height="26" Width="244" Grid.Column="2"/>
+                <TextBox Height="24" Margin="8,487,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.Column="0" HorizontalAlignment="Left" Width="755" Grid.ColumnSpan="3"/>
+                <Label Content="Дата рождения:" HorizontalAlignment="Left" Margin="10,461,0,0" VerticalAlignment="Top" Grid.Column="0" Height="26" Width="97"/>
+                <TextBox Height="24" Margin="8,537,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" HorizontalAlignment="Left" Width="755" Grid.ColumnSpan="3"/>
+                <Label Content="Место работы:" HorizontalAlignment="Left" Margin="10,511,0,0" VerticalAlignment="Top" Grid.Column="0"  Height="26" Width="91"/>
+                <TextBox Height="24" Margin="8,585,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" HorizontalAlignment="Left" Width="755" Grid.ColumnSpan="3"/>
+                <Label Content="Место жительства" HorizontalAlignment="Left" Margin="10,561,0,0" VerticalAlignment="Top" Grid.Column="0" Height="26" Width="110"/>
+                <TextBox Height="24" Margin="10,656,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="354"/>
+                <TextBox Height="25" Margin="164,656,24,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.Column="1" Grid.ColumnSpan="2"/>
+                <Label Content="Домашний телефон" HorizontalAlignment="Left" Margin="10,611,0,0" VerticalAlignment="Top" Height="26" Width="120" Grid.Column="0"/>
+                <Label Content="Мобильный телефон" HorizontalAlignment="Left" Margin="164,609,0,0" VerticalAlignment="Top" Height="26" Width="354" Grid.Column="1" Grid.ColumnSpan="2"/>
+                <CheckBox Content="Что то там подтверждаю" HorizontalAlignment="Left" Margin="10,690,0,0" VerticalAlignment="Top" Height="16" Width="167" Grid.Column="0"/>
+                <Label Content="(при наличии)" HorizontalAlignment="Left" Margin="20,633,0,0" VerticalAlignment="Top" Background="{x:Null}" FontSize="10" Grid.Column="0" Foreground="Red" Height="23" Width="75"/>
+                <Label Content="(при наличии)" HorizontalAlignment="Left" Margin="179,633,0,0" VerticalAlignment="Top" Background="{x:Null}" FontSize="10" Foreground="Red" Height="23" Width="85" Grid.Column="1"/>
+                <Label Content="Отец (или законный представитель)" HorizontalAlignment="Left" Margin="10,391,0,0" VerticalAlignment="Top" Height="26" Width="209" Grid.Column="0"/>
 
             </Grid>
         </ScrollViewer>

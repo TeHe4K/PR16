@@ -9,20 +9,24 @@
       Title="Contacts">
 
     <Grid Background="#F8F9FA">
-        <Grid Margin="0,0,0,349.6" Background="White">
+        <Grid Background="White" Height="60" VerticalAlignment="Top">
             <Image HorizontalAlignment="Left" Height="40" Margin="10,10,0,0" VerticalAlignment="Top" Width="40" Source="C:\Users\student-a502.PERMAVIAT\Desktop\PR16\ICO\Логотип_Пермский_авиационный_техникум.png"/>
             <Label Content="Электронная приемная компания" HorizontalAlignment="Left" Margin="55,1,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="19"/>
             <Label Content="Пермского авиационного техникума им. А. Д. Швецова" HorizontalAlignment="Left" Margin="55,24,0,0" VerticalAlignment="Top"/>
         </Grid>
         <Grid Margin="0,60,0,-0.4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
             <Label Content="Контакты" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-            <TextBox Height="24" Margin="10,65,407,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-            <Button Content="Продолжить" HorizontalAlignment="Right" Margin="0,0,10,5" VerticalAlignment="Bottom" Width="150" Height="25" Click="Next"/>
-            <TextBox Height="24" Margin="407,65,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-            <TextBox Height="24" Margin="9,117,543,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-            <Label Content="Домашний номер:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
-            <Label Content="Мобильный телефон:" HorizontalAlignment="Left" Margin="407,39,0,0" VerticalAlignment="Top"/>
-            <Label Content="Электронный адрес:" HorizontalAlignment="Left" Margin="9,91,0,0" VerticalAlignment="Top"/>
+            <TextBox Height="24" Margin="10,65,12,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+            <Button Content="Продолжить" HorizontalAlignment="Right" Margin="0,0,10,5" VerticalAlignment="Bottom" Width="150" Height="25" Click="Next" Grid.Column="1"/>
+            <TextBox Height="24" Margin="10,65,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.Column="1"/>
+            <TextBox Height="24" Margin="9,117,12,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+            <Label Content="Домашний номер:" Margin="11,41,11,0" VerticalAlignment="Top"/>
+            <Label Content="Мобильный телефон:" Margin="10,39,10,0" VerticalAlignment="Top" Grid.Column="1"/>
+            <Label Content="Электронный адрес:" Margin="9,91,12,0" VerticalAlignment="Top"/>
         </Grid>
     </Grid>
 </Page>
