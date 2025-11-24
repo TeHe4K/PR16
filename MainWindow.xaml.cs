@@ -20,9 +20,13 @@ namespace PR16
     /// </summary>
     public partial class MainWindow : Window
     {
+        
         public MainWindow()
         {
             InitializeComponent();
+            MainWindow mainWindow = this;
+            mainWindow.frame.Navigate(new Uri("Pages/Statement.xaml", UriKind.Relative));
         }
+
     }
 }
