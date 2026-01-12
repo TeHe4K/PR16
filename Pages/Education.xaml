@@ -16,7 +16,8 @@
                    Height="40"
                    Margin="10,10,0,0" 
                    VerticalAlignment="Top"
-                   Width="40"/>
+                   Width="40"
+                   Source="C:\Users\student-a502.PERMAVIAT\source\repos\TeHe4K\PR16\ICO\Логотип_Пермский_авиационный_техникум.png"/>
             <Label Content="Электронная приемная компания"
                    HorizontalAlignment="Left" 
                    Margin="55,1,0,0" 
@@ -129,6 +130,7 @@
                      TextWrapping="Wrap" 
                      Text="" 
                      Grid.ColumnSpan="2"
+                     x:Name="file"
                      VerticalAlignment="Top"/>
                     <Grid Grid.Column="1" HorizontalAlignment="Right" Width="391" Height="400" VerticalAlignment="Bottom">
                         <Button Content="Продолжить"
@@ -157,7 +159,7 @@
                     VerticalAlignment="Top"
                     Width="75"
                     Height="25" 
-                    Click="Next" Grid.Column="1"/>
+                    Click="File" Grid.Column="1"/>
                     <Label Content="Формат документов должен быть PNG,JPEG или PDF, а максимальный размер каждого файла 5 МБ"
                    FontSize="10" 
                    Grid.ColumnSpan="2"
