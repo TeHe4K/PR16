@@ -4,7 +4,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:PR16.Pages"
-      mc:Ignorable="d" d:DesignWidth="792" d:Height="410"
+      mc:Ignorable="d" d:DesignWidth="800" d:Height="450"
       Title="Passport">
 
     <Grid Background="#F8F9FA">
@@ -13,43 +13,60 @@
             <Label Content="Электронная приемная компания" HorizontalAlignment="Left" Margin="55,1,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="19"/>
             <Label Content="Пермского авиационного техникума им. А. Д. Швецова" HorizontalAlignment="Left" Margin="55,24,0,0" VerticalAlignment="Top"/>
         </Grid>
-        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Margin="0,60,0,0">
-            <Grid Margin="0,0,0,-0.4" Height="554" RenderTransformOrigin="0.505,0.34">
-                <Label Content="Пасспортные данные:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-                <TextBox Height="24" Margin="10,65,542,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-                <Button Content="Продолжить" HorizontalAlignment="Right" Margin="0,0,10,5" VerticalAlignment="Bottom" Width="150" Height="25" Click="Next"/>
-                <TextBox Height="24" Margin="276,65,276,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-                <TextBox Height="24" Margin="542,65,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-                <Label Content="Фамилия:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
-                <Label Content="Имя:" HorizontalAlignment="Left" Margin="276,41,0,0" VerticalAlignment="Top"/>
-                <Label Content="Отчество:" HorizontalAlignment="Left" Margin="542,39,0,0" VerticalAlignment="Top"/>
-                <TextBox Height="24" Margin="10,115,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-                <Label Content="Дата рождения:" HorizontalAlignment="Left" Margin="10,91,0,0" VerticalAlignment="Top"/>
-                <TextBox Height="24" Margin="10,165,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-                <Label Content="Гражданство:" HorizontalAlignment="Left" Margin="10,141,0,0" VerticalAlignment="Top"/>
-                <TextBox Height="24" Margin="10,215,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-                <Label Content="Место рождения:" HorizontalAlignment="Left" Margin="10,191,0,0" VerticalAlignment="Top"/>
-                <TextBox Height="24" Margin="10,265,542,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-                <TextBox Height="24" Margin="276,265,276,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-                <TextBox Height="24" Margin="542,265,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-                <Label Content="Серия и номер паспорта:" HorizontalAlignment="Left" Margin="10,241,0,0" VerticalAlignment="Top"/>
-                <Label Content="Дата выдачи:" HorizontalAlignment="Left" Margin="276,241,0,0" VerticalAlignment="Top"/>
-                <Label Content="Код подразделения:" HorizontalAlignment="Left" Margin="542,239,0,0" VerticalAlignment="Top"/>
-                <TextBox Height="24" Margin="10,315,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-                <Label Content="Кем выдан:" HorizontalAlignment="Left" Margin="10,291,0,0" VerticalAlignment="Top"/>
-                <TextBox Height="24" Margin="10,365,276,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-                <Label Content="Адрес по прописке:" HorizontalAlignment="Left" Margin="10,341,0,0" VerticalAlignment="Top"/>
-                <TextBox Height="24" Margin="542,365,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-                <Label Content="Район:" HorizontalAlignment="Left" Margin="542,341,0,0" VerticalAlignment="Top"/>
-                <TextBox Height="24" Margin="10,415,276,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-                <Label Content="Адрес проживания фактический:" HorizontalAlignment="Left" Margin="10,391,0,0" VerticalAlignment="Top"/>
-                <TextBox Height="24" Margin="542,415,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-                <Label Content="Район:" HorizontalAlignment="Left" Margin="542,391,0,0" VerticalAlignment="Top"/>
-                <Label Content="Прикрепите сканы страниц паспорта с фотографией и действующей пропиской" HorizontalAlignment="Left" Margin="10,441,0,0" VerticalAlignment="Top"/>
-                <Label Content="(Формат документов должен быть в формате PDF, а максимальный размер файла 5 МБ)" HorizontalAlignment="Left" Margin="20,467,0,0" VerticalAlignment="Top" Background="{x:Null}" FontSize="10" Foreground="Red"/>
-                <TextBox Height="24" Margin="12,491,85,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" x:Name="file"/>
-                <Button Content="Выбрать..." HorizontalAlignment="Right" Margin="0,0,10,40" VerticalAlignment="Bottom" Width="70" Height="26" Click="File"/>
-            </Grid>
-        </ScrollViewer>
+        <Grid Margin="0,60,0,0">
+
+            <ScrollViewer HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Auto">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Пасспортные данные:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Grid.Column="0" FontWeight="Bold"/>
+                    <TextBox Height="24" Margin="10,65,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.Column="0" />
+                    <TextBox Height="24" Margin="10,65,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.Column="1" />
+                    <TextBox Height="24" Margin="10,65,25,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.Column="2" />
+                    <Grid Grid.Column="2" HorizontalAlignment="Right" Height="540" VerticalAlignment="Bottom">
+                        <Button Content="Продолжить"
+                        HorizontalAlignment="Right" 
+                        Margin="0,0,25,0"
+                        Width="150"
+                        Click="Next" 
+                        Grid.Column="2"
+                        Height="25" 
+                        VerticalAlignment="Bottom"/>
+                    </Grid>
+                    <Label Content="Фамилия:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Grid.Column="0" />
+                    <Label Content="Имя:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Grid.Column="1" />
+                    <Label Content="Отчество:" HorizontalAlignment="Left" Margin="10,39,25,0" VerticalAlignment="Top" Grid.Column="2" />
+                    <TextBox Height="24" Margin="10,115,25,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.ColumnSpan="3" />
+                    <Label Content="Дата рождения:" HorizontalAlignment="Left" Margin="10,91,0,0" VerticalAlignment="Top" Grid.Column="0" />
+                    <TextBox Height="24" Margin="10,165,25,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.ColumnSpan="3"/>
+                    <Label Content="Гражданство:" HorizontalAlignment="Left" Margin="10,141,0,0" VerticalAlignment="Top" Grid.Column="0" />
+                    <TextBox Height="24" Margin="10,215,25,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.ColumnSpan="3"/>
+                    <Label Content="Место рождения:" HorizontalAlignment="Left" Margin="10,191,0,0" VerticalAlignment="Top" Grid.Column="0"/>
+                    <TextBox Height="24" Margin="10,265,10,0"  TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.Column="0"/>
+                    <TextBox Height="24" Margin="10,265,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.Column="1"/>
+                    <TextBox Height="24" Margin="10,265,25,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.Column="2"/>
+                    <Label Content="Серия и номер паспорта:" HorizontalAlignment="Left" Margin="10,241,0,0" VerticalAlignment="Top" Grid.Column="0"/>
+                    <Label Content="Дата выдачи:" HorizontalAlignment="Left" Margin="10,241,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                    <Label Content="Код подразделения:" HorizontalAlignment="Left" Margin="10,241,0,0" VerticalAlignment="Top" Grid.Column="2"/>
+                    <TextBox Height="24" Margin="10,315,25,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.ColumnSpan="3"/>
+                    <Label Content="Кем выдан:" HorizontalAlignment="Left" Margin="10,291,0,0" VerticalAlignment="Top" Grid.Column="0"/>
+                    <TextBox Height="24" Margin="12,365,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+                    <Label Content="Адрес по прописке:" HorizontalAlignment="Left" Margin="10,341,0,0" VerticalAlignment="Top" Grid.Column="0"/>
+                    <TextBox Height="24" Margin="10,365,25,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"  Grid.Column="2" />
+                    <Label Content="Район:" HorizontalAlignment="Left" Margin="10,341,0,0" VerticalAlignment="Top"  Grid.Column="2"/>
+                    <TextBox Height="24" Margin="17,415,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"  Grid.ColumnSpan="2"/>
+                    <Label Content="Адрес проживания фактический:" HorizontalAlignment="Left" Margin="10,391,0,0" VerticalAlignment="Top"/>
+                    <TextBox Height="24" Margin="10,415,25,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"  Grid.Column="2"/>
+                    <Label Content="Район:" HorizontalAlignment="Left" Margin="10,391,0,0" VerticalAlignment="Top"  Grid.Column="2"/>
+                    <Label Content="Прикрепите сканы страниц паспорта с фотографией и действующей пропиской" HorizontalAlignment="Left" Margin="10,441,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3"/>
+                    <Label Content="(Формат документов должен быть в формате PDF, а максимальный размер файла 5 МБ)" HorizontalAlignment="Left" Margin="20,461,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Background="{x:Null}" FontSize="10" Foreground="Red"/>
+                    <TextBox Height="24" Margin="10,484,85,0" TextWrapping="Wrap" Text="" x:Name="file" Grid.ColumnSpan="3" VerticalAlignment="Top"/>
+                    <Button Content="Выбрать..." HorizontalAlignment="Right" Margin="0,484,25,0" VerticalAlignment="Top"  Height="26" Click="File" Grid.Column="2"/>
+                </Grid>
+            </ScrollViewer>
+        </Grid>
     </Grid>
 </Page>

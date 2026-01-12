@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:PR16.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="410" d:DesignWidth="792"
+      d:DesignHeight="410" d:DesignWidth="800"
       Title="Statement">
 
     <Grid Background="#F8F9FA">
@@ -14,7 +14,7 @@
             <Label Content="Электронная приемная компания" HorizontalAlignment="Left" Margin="55,1,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="19"/>
             <Label Content="Пермского авиационного техникума им. А. Д. Швецова" HorizontalAlignment="Left" Margin="55,24,0,0" VerticalAlignment="Top"/>
         </Grid>
-        <Grid Margin="0,60,0,-0.4">
+        <Grid Margin="0,60,0,0">
             <Label Content="Заявление" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
             <Label Content="Прошу принять меня в КГАПОУ Пермский авиационный техникум им. А. Д. Швецова" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
             <Label Content="Выберите один из вариантов" HorizontalAlignment="Left" Margin="20,67,0,0" VerticalAlignment="Top" Background="{x:Null}" FontSize="10" Foreground="Red"/>
@@ -28,7 +28,15 @@
             <TextBox Height="24" Margin="12,237,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
             <Label Content="Год окончания образовательной организации" HorizontalAlignment="Left" Margin="10,266,0,0" VerticalAlignment="Top"/>
             <TextBox Height="24" Margin="12,291,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-            <Button Content="Продолжить" HorizontalAlignment="Right" Margin="0,0,10,5" VerticalAlignment="Bottom" Width="150" Height="25" Click="Next"/>
+            <Grid Grid.Column="1" HorizontalAlignment="Right" Width="391" Height="400" VerticalAlignment="Bottom">
+             <Button Content="Продолжить"
+            HorizontalAlignment="Right" 
+            Margin="0,0,10,10"
+            Width="150"
+            Click="Next" 
+            Height="25" 
+            VerticalAlignment="Bottom"/>
+            </Grid>
         </Grid>
     </Grid>
 </Page>

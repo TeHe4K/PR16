@@ -46,7 +46,7 @@ namespace PR16.Pages
 
         private void Next(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new Uri("Pages/Status.xaml", UriKind.Relative));
+            this.NavigationService.Navigate(new Uri("Pages/Education.xaml", UriKind.Relative));
         }
     }
 }

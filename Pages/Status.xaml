@@ -30,7 +30,7 @@
             <Label Content="(Формат документов должен быть в формате PDF, а максимальный размер файла 5 МБ)" HorizontalAlignment="Left" Margin="20,266,0,0" VerticalAlignment="Top" Background="{x:Null}" FontSize="10" Foreground="Red"/>
             <TextBox Height="24" Margin="12,291,85,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" x:Name="file"/>
             <Button Content="Продолжить" HorizontalAlignment="Right" Margin="0,0,10,5" VerticalAlignment="Bottom" Width="150" Height="25" Click="Next"/>
-            <Button Content="Выбрать..." HorizontalAlignment="Right" Margin="0,0,10,35" VerticalAlignment="Bottom" Width="70" Height="25" Click="File"/>
+            <Button Content="Выбрать..." HorizontalAlignment="Right" Margin="0,290,10,0" Width="70" Click="File" Height="25" VerticalAlignment="Top"/>
         </Grid>
     </Grid>
 </Page>
